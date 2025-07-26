@@ -42,8 +42,8 @@ export default function MarketingSystemPage() {
 
           <div className="container grid gap-8 md:grid-cols-2 md:items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl font-bold uppercase leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-                Fill Your Schedule with High-Value Patients – <span className="text-[#F4A261]">Without the Hassle</span>
+              <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl uppercase text-center md:text-left">
+                Fill Your Schedule with High-Value Patients – <span className="text-[#4CAF50]">Without the Hassle</span>
               </h1>
               <p className="text-xl">
                 Everything You Need to Attract & Convert More Patients – Ads, SEO, and an Automated Marketing Funnel.
@@ -61,12 +61,12 @@ export default function MarketingSystemPage() {
                 </div>
                 <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
                   <Check className="h-5 w-5 text-[#4CAF50]" />
-                  <span className="text-sm font-medium">$3,497/month</span>
+                  <span className="text-sm font-medium">$2,497/month</span>
                 </div>
               </div>
 
               <div className="pt-4">
-                <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
                   <span>Start Growing Today</span>
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
@@ -74,10 +74,10 @@ export default function MarketingSystemPage() {
             </div>
 
             {/* Hero Image */}
-            <div className="relative mx-auto max-w-md rounded-lg bg-white p-6 shadow-xl">
+            <div className="relative h-[400px] w-full  rounded-lg ">
               <div className="overflow-hidden rounded-lg">
                 <Image
-                  src="/images/agenda2.webp"
+                  src="/images/herohome.webp"
                   alt="Happy dentist with patients"
                   width={600}
                   height={400}
@@ -118,7 +118,7 @@ export default function MarketingSystemPage() {
         {/* 2️⃣ Problem Section */}
         <section className="bg-[#F5F5F5] py-16">
           <div className="container">
-            <h2 className="mb-8 text-center text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+            <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
               You're Busy Running a Practice. Let Us Handle the Growth.
             </h2>
 
@@ -132,7 +132,7 @@ export default function MarketingSystemPage() {
                 {
                   icon: <DollarSign className="h-10 w-10 text-[#F4A261]" />,
                   title: "Save Money",
-                  description: "Most agencies charge $5,000+ per month – we do it better for $3,497/month.",
+                  description: "Most agencies charge $5,000+ per month – we do it better for $2,497/month.",
                 },
                 {
                   icon: <Users className="h-10 w-10 text-[#F4A261]" />,
@@ -161,7 +161,7 @@ export default function MarketingSystemPage() {
                 <span className="font-bold">What We Do:</span> We don't just bring traffic – we convert it into
                 appointments.
               </p>
-              <Button className="bg-[#1D3557] hover:bg-[#1D3557]/90">
+              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
                 <span>Let's Build Your Growth Plan</span>
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
@@ -173,7 +173,7 @@ export default function MarketingSystemPage() {
         <section className="relative bg-white py-16">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+              <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
                 What's Included in Your Marketing System?
               </h2>
               <p className="text-lg text-[#1D3557]">
@@ -233,7 +233,7 @@ export default function MarketingSystemPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-[#1D3557] hover:bg-[#1D3557]/90">
+              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
                 <span>See How It Works</span>
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
@@ -245,7 +245,7 @@ export default function MarketingSystemPage() {
         <section className="bg-[#F5F5F5] py-16">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+              <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
                 How Our Marketing System Works
               </h2>
               <p className="text-lg text-[#1D3557]">
@@ -323,7 +323,7 @@ export default function MarketingSystemPage() {
         <section className="bg-[#1D3557] py-16 text-white">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl">
+              <h2 className="mb-6 text-4xl md:text-5xl font-extrabold text-white leading-tight uppercase text-center">
                 We Built This For Dentists Who Want Predictable Growth
               </h2>
               <p className="text-lg">See why our marketing system delivers better results at a fraction of the cost</p>
@@ -336,7 +336,7 @@ export default function MarketingSystemPage() {
                     icon: <Award className="h-10 w-10 text-[#F4A261]" />,
                     title: "Best Value for Money",
                     description:
-                      "Others charge $5,000-$10,000/month for similar services. We deliver better results for $3,497/month.",
+                      "Others charge $5,000-$10,000/month for similar services. We deliver better results for $2,497/month.",
                   },
                   {
                     icon: <Search className="h-10 w-10 text-[#F4A261]" />,
@@ -370,7 +370,7 @@ export default function MarketingSystemPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
                 Let's Start Growing
               </Button>
             </div>
@@ -550,7 +550,7 @@ export default function MarketingSystemPage() {
         <section className="bg-[#F5F5F5]/40 py-16">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold text-[#1D3557] md:text-4xl">
+              <h2 className="mb-4 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
                 How Our Marketing System Drives Growth
               </h2>
               <p className="text-lg text-[#1D3557]">A complete end-to-end solution for dental practices</p>

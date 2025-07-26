@@ -1,7 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
 import {
-  CheckCircle,
   ArrowRight,
   Star,
   ChevronRight,
@@ -10,8 +8,6 @@ import {
   Shield,
   DollarSign,
   Search,
-  MapPin,
-  Layers,
 } from "lucide-react"
 
 import { generalFaqs } from "@/app/data/faqs"
@@ -29,29 +25,29 @@ export default function Home() {
 
       <main className="flex-1">
         {/* 1️⃣ Hero Section with Dynamic Gradient Background */}
-        <section className="relative overflow-hidden py-20">
+        <section className="relative overflow-hidden py-20 bg-[#1D3557]">
           <div className="container grid gap-8 md:grid-cols-2 md:items-center">
             <div className="space-y-6">
-              <h1 className="  text-[#1D3557] text-4xl font-bold uppercase leading-tight tracking-tighter md:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl uppercase text-center md:text-left">
                 Dental SEO for <span className="text-[#4CAF50]">Revenue.</span>
                 <span className="block text-[#F4A261]">Not vanity.</span>
               </h1>
-              <p className="text-xl text-[#1D3557]">
+              <p className="text-xl text-white">
                 SEO, web design, and marketing systems built for growth-minded dentists—without the high costs or
                 long-term contracts.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button className="bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase" size="lg">
                   Get Started Today
                 </Button>
-                <Button variant="outline" className="border-[#1D3557] text-[#1D3557]" size="lg">
+                <Button variant="outline" className="border-[#1D3557] text-[#1D3557] hover:bg-transparent hover:text-white hover:border-white transition-all duration-300 uppercase " size="lg">
                   Free Consultation
                 </Button>
               </div>
             </div>
-            <div className="relative h-[400px] w-full overflow-hidden rounded-lg">
+            <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/placeholder.svg?height=800&width=800"
+                src="/images/herohome.webp"
                 alt="Dental marketing professional"
                 fill
                 className="object-cover"
@@ -157,41 +153,90 @@ export default function Home() {
         </section>
 
         {/* 2️⃣ Key Differentiators with Static Icons with Luminous Effect */}
-        <section className="bg-[#F5F5F5] py-16">
-          <div className="container">
-            <h2 className="mb-12 text-center text-3xl font-bold text-[#1D3557] md:text-4xl">Why Choose Us?</h2>
-            <div className="grid gap-8 md:grid-cols-4">
+        {/* Key Differentiators - Modern Design */}
+        <section className="bg-[#F5F5F5] py-20 px-6 relative overflow-hidden">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-[#4CAF50] rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#F4A261] rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
+          </div>
+
+          <div className="container mx-auto relative z-10">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] leading-tight uppercase">
+                Why Choose{' '}
+                <span className="text-[#4CAF50]">
+                  Us?
+                </span>
+              </h2>
+              <p className="text-xl text-[#1D3557]/80 max-w-3xl mx-auto leading-relaxed">
+                We deliver exceptional value with transparency, flexibility, and guaranteed results.
+              </p>
+            </div>
+
+            {/* Features Grid */}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
               {[
                 {
                   title: "Best Value",
                   description: "One option for each service that includes everything needed, value is maximized",
-                  icon: <BarChart className="h-8 w-8 text-[#F4A261]" />,
+                  icon: <BarChart className="h-8 w-8" />,
+                  gradient: "from-[#4CAF50] to-[#2e7d32]",
                 },
                 {
                   title: "No Long-Term Contracts",
                   description: "Month-to-month flexibility with guaranteed results",
-                  icon: <Clock className="h-8 w-8 text-[#F4A261]" />,
+                  icon: <Clock className="h-8 w-8" />,
+                  gradient: "from-[#F4A261] to-[#e67e22]",
                 },
                 {
                   title: "90-Day Money Back",
                   description: "100% money back guarantee, no questions asked",
-                  icon: <Shield className="h-8 w-8 text-[#F4A261]" />,
+                  icon: <Shield className="h-8 w-8" />,
+                  gradient: "from-[#4CAF50] to-[#2e7d32]",
                 },
                 {
                   title: "Budget Friendly",
                   description: "Save up to $50,000 in yearly marketing expenses compared to competitors",
-                  icon: <DollarSign className="h-8 w-8 text-[#F4A261]" />,
+                  icon: <DollarSign className="h-8 w-8" />,
+                  gradient: "from-[#F4A261] to-[#e67e22]",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center">
-                  <div className="mb-4 rounded-full bg-[#1D3557] p-4 transition-transform hover:scale-110 shadow-[0 0 20px rgba(29,53,87,0.6)]">
-                    {item.icon}
+                <div key={i} className="group">
+                  <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 h-full transition-all duration-500 hover:shadow-2xl hover:border-[#4CAF50]/20 text-center relative overflow-hidden hover:-translate-y-2">
+                    {/* Background Glow Effect */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-3xl`}></div>
+
+                    {/* Icon Container */}
+                    <div className="relative mb-6">
+                      <div className={`w-20 h-20 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-all duration-300 group-hover:shadow-2xl`}>
+                        <div className="text-white">
+                          {item.icon}
+                        </div>
+                      </div>
+
+                      {/* Floating Ring Effect */}
+                      <div className={`absolute inset-0 w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${item.gradient} opacity-20 scale-125 group-hover:scale-150 transition-transform duration-500 blur-md`}></div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="relative z-10">
+                      <h3 className="mb-4 text-xl font-bold text-[#1D3557] leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#1D3557]/80 leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+
+                    {/* Bottom Accent Line */}
+                    <div className={`absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r ${item.gradient} rounded-b-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
                   </div>
-                  <h3 className="mb-2 text-xl font-bold text-[#1D3557]">{item.title}</h3>
-                  <p className="text-[#1D3557]">{item.description}</p>
                 </div>
               ))}
             </div>
+
           </div>
         </section>
 
@@ -200,7 +245,7 @@ export default function Home() {
         {/* 4️⃣ Success Stories & Social Proof - Redesigned with One Impactful Review */}
         <section id="testimonials" className="bg-[#F5F5F5] py-16">
           <div className="container">
-            <h2 className="mb-12 text-center text-3xl font-bold text-[#1D3557] md:text-4xl">Success Story</h2>
+            <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">Success Story</h2>
 
             <div className="mx-auto max-w-4xl overflow-hidden rounded-xl bg-white shadow-lg">
               <div className="grid md:grid-cols-5">
@@ -271,143 +316,136 @@ export default function Home() {
 
         <PricingSection />
 
-        {/* Move the Process Section here, after Pricing */}
-        {/* Process Section with Modern Animation */}
-        <section id="process" className="relative bg-white py-16 overflow-hidden">
-          {/* Modern Animation Background */}
-          <div className="absolute inset-0 -z-10">
-            {/* Animated Dots Pattern */}
-            <div className="absolute inset-0">
-              {Array.from({ length: 20 }).map((_, i) => {
-                const size = Math.random() * 8 + 4
-                const left = Math.random() * 100
-                const top = Math.random() * 100
-                const opacity = Math.random() * 0.5 + 0.1
 
-                return (
-                  <div
-                    key={i}
-                    className="absolute rounded-full bg-[#1D3557]/10"
-                    style={{
-                      width: `${size}px`,
-                      height: `${size}px`,
-                      left: `${left}%`,
-                      top: `${top}%`,
-                      opacity: opacity,
-                    }}
-                  ></div>
-                )
-              })}
-            </div>
-
-            {/* Flowing Lines */}
-            <svg className="absolute h-full w-full opacity-10" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0,100 Q150,50 300,100 T600,100"
-                fill="none"
-                stroke="#1D3557"
-                strokeWidth="2"
-                className="animate-[flow_20s_linear_infinite]"
-              />
-              <path
-                d="M0,200 Q200,150 400,200 T800,200"
-                fill="none"
-                stroke="#F4A261"
-                strokeWidth="2"
-                className="animate-[flow_25s_linear_infinite]"
-                style={{ animationDelay: "2s" }}
-              />
-              <path
-                d="M0,300 Q250,250 500,300 T1000,300"
-                fill="none"
-                stroke="#1D3557"
-                strokeWidth="2"
-                className="animate-[flow_30s_linear_infinite]"
-                style={{ animationDelay: "4s" }}
-              />
-            </svg>
+        {/* Process Section - Minimalist Timeline */}
+        <section id="process" className="relative bg-gradient-to-b from-white to-[#F5F5F5] py-20 overflow-hidden">
+          {/* Subtle Background Elements */}
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#4CAF50] rounded-full blur-3xl"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#F4A261] rounded-full blur-3xl"></div>
           </div>
 
-          <div className="container">
-            <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold text-[#1D3557] md:text-4xl">Our Simple Process</h2>
-              <p className="text-lg text-[#1D3557]">
+          <div className="container mx-auto px-6 relative z-10">
+            {/* Header */}
+            <div className="text-center mb-20">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] leading-tight uppercase mb-6">
+                Our Simple{' '}
+                <span className="text-[#4CAF50] ">
+                  Process
+                </span>
+              </h2>
+              <p className="text-xl text-[#1D3557]/80 max-w-2xl mx-auto leading-relaxed">
                 We make growing your dental practice straightforward and transparent
               </p>
             </div>
 
-            <div className="relative mx-auto max-w-4xl">
-              {/* Connecting Line */}
+            {/* Timeline Container */}
+            <div className="max-w-6xl mx-auto">
+              {/* Central Timeline Line */}
+              <div className="relative">
+                {/* Vertical Line for Mobile */}
+                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4CAF50] via-[#F4A261] to-[#4CAF50] md:hidden"></div>
 
-              <div className="grid gap-12 md:grid-cols-4">
-                {[
-                  {
-                    step: "1",
-                    title: "Discovery Call",
-                    description: "We learn about your practice goals and challenges",
-                    delay: "0s",
-                  },
-                  {
-                    step: "2",
-                    title: "Custom Strategy",
-                    description: "We create a tailored plan for your specific needs",
-                    delay: "0.2s",
-                  },
-                  {
-                    step: "3",
-                    title: "Implementation",
-                    description: "We execute the strategy with precision and care",
-                    delay: "0.4s",
-                  },
-                  {
-                    step: "4",
-                    title: "Growth & Scaling",
-                    description: "We optimize and scale based on performance data",
-                    delay: "0.6s",
-                  },
-                ].map((process, i) => (
-                  <div
-                    key={i}
-                    className="relative flex flex-col items-center text-center animate-[fadeInUp_0.8s_ease-in-out]"
-                    style={{ animationDelay: process.delay }}
-                  >
-                    <div className="relative z-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#1D3557] text-xl font-bold text-white shadow-[0_0_15px_rgba(29,53,87,0.5)]">
-                      {process.step}
-                      <div className="absolute -right-1 -top-1 h-4 w-4 rounded-full bg-[#F4A261] shadow-[0_0_10px_rgba(76,175,80,0.7)]"></div>
-                    </div>
-                    <h3 className="mb-2 text-xl font-bold text-[#1D3557]">{process.title}</h3>
-                    <p className="text-[#1D3557]">{process.description}</p>
-                    {i < 3 && (
-                      <div className="absolute -right-6 top-8 hidden text-[#1D3557] md:block">
-                        <ArrowRight className="h-6 w-6" />
+                {/* Horizontal Line for Desktop */}
+                <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-[#4CAF50] via-[#F4A261] to-[#F4A261] transform -translate-y-1/2"></div>
+
+                {/* Process Steps */}
+                <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-4 md:gap-8">
+                  {[
+                    {
+                      step: "01",
+                      title: "Discovery Call",
+                      description: "We learn about your practice goals and challenges",
+                      color: "from-[#4CAF50] to-[#2e7d32]",
+                      position: "top"
+                    },
+                    {
+                      step: "02",
+                      title: "Custom Strategy",
+                      description: "We create a tailored plan for your specific needs",
+                      color: "from-[#F4A261] to-[#e67e22]",
+                      position: "bottom"
+                    },
+                    {
+                      step: "03",
+                      title: "Implementation",
+                      description: "We execute the strategy with precision and care",
+                      color: "from-[#4CAF50] to-[#2e7d32]",
+                      position: "top"
+                    },
+                    {
+                      step: "04",
+                      title: "Growth & Scaling",
+                      description: "We optimize and scale based on performance data",
+                      color: "from-[#F4A261] to-[#e67e22]",
+                      position: "bottom"
+                    }
+                  ].map((process, i) => (
+                    <div key={i} className="relative">
+                      {/* Mobile Layout */}
+                      <div className="md:hidden flex items-start space-x-6 pl-4">
+                        {/* Step Circle */}
+                        <div className="flex-shrink-0 relative">
+                          <div className={`w-16 h-16 bg-gradient-to-br ${process.color} rounded-2xl flex items-center justify-center shadow-lg relative z-10`}>
+                            <span className="text-white font-bold text-lg">{process.step}</span>
+                          </div>
+                        </div>
+
+                        {/* Content */}
+                        <div className="flex-1 pb-8">
+                          <h3 className="text-2xl font-bold text-[#1D3557] mb-3">{process.title}</h3>
+                          <p className="text-[#1D3557]/80 leading-relaxed">{process.description}</p>
+                        </div>
                       </div>
-                    )}
-                  </div>
-                ))}
+
+                      {/* Desktop Layout */}
+                      <div className="hidden md:block">
+                        <div className={`${process.position === 'bottom' ? 'pt-20' : 'pb-20'} text-center`}>
+                          {/* Step Circle */}
+                          <div className="relative inline-block mb-6">
+                            <div className={`w-20 h-20 bg-gradient-to-br ${process.color} rounded-2xl flex items-center justify-center shadow-xl mx-auto relative z-10 hover:scale-110 transition-transform duration-300`}>
+                              <span className="text-white font-bold text-xl">{process.step}</span>
+                            </div>
+
+                          </div>
+
+                          {/* Content */}
+                          <div className="max-w-xs mx-auto">
+                            <h3 className="text-xl font-bold text-[#1D3557] mb-3 leading-tight">{process.title}</h3>
+                            <p className="text-[#1D3557]/80 text-sm leading-relaxed">{process.description}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            <div className="mt-12 text-center">
-              <Button className="bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90">
-                Schedule Your Discovery Call
-              </Button>
+            {/* Bottom CTA */}
+            <div className="mt-20 text-center">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50 max-w-2xl mx-auto">
+                <h3 className="text-2xl font-bold text-[#1D3557] mb-4">Ready to Get Started?</h3>
+                <p className="text-[#1D3557]/80 mb-6">Let's discuss how we can help grow your dental practice</p>
+
+                <button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  Schedule Your Discovery Call
+                </button>
+
+                <p className="text-xs text-[#1D3557]/60 mt-4">
+                  Free consultation • No commitment required
+                </p>
+              </div>
             </div>
+          
           </div>
         </section>
 
         {/* 6️⃣ Call-to-Action */}
         <section className="relative overflow-hidden bg-[#1D3557] py-16 text-white">
-          {/* Animated Background */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute -left-20 top-0 h-64 w-64 rounded-full bg-[#F4A261]/10 blur-3xl animate-pulse"></div>
-            <div
-              className="absolute right-0 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-[#F4A261]/10 blur-3xl animate-pulse"
-              style={{ animationDelay: "1.5s" }}
-            ></div>
-          </div>
 
           <div className="container text-center">
-            <h2 className="mb-4 text-3xl font-bold md:text-4xl">Ready to grow your practice?</h2>
+            <h2 className="mb-4 text-3xl font-extrabold md:text-4xl uppercase">Ready to grow your practice?</h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg">
               Join hundreds of dental practices that are thriving with our marketing solutions.
             </p>

@@ -36,8 +36,8 @@ export default function SEOPackagePage() {
 
           <div className="container grid gap-8 md:grid-cols-2 md:items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl font-bold uppercase leading-tight tracking-tighter md:text-5xl lg:text-6xl">
-                SEO That Works for Dentists—For Just <span className="text-[#F4A261]">$697/Month!</span>
+              <h1 className="text-4xl font-extrabold uppercase leading-tight tracking-tighter md:text-5xl lg:text-6xl">
+                SEO That Works for Dentists—For Just <span className="text-[#4CAF50]">$897/Month!</span>
               </h1>
               <p className="text-xl">
                 Dominate local search, attract high-quality patients, and stop overpaying for SEO.
@@ -60,7 +60,7 @@ export default function SEOPackagePage() {
               </div>
 
               <div className="pt-4">
-                <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
                   <span>Boost My Rankings Today</span>
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Button>
@@ -119,7 +119,7 @@ export default function SEOPackagePage() {
         {/* 2️⃣ The Pain Section */}
         <section className="bg-[#F5F5F5] py-16">
           <div className="container">
-            <h2 className="mb-12 text-center text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+            <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
               Why Most Dentists Struggle with SEO
             </h2>
 
@@ -165,8 +165,8 @@ export default function SEOPackagePage() {
         <section className="relative bg-white py-16">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
-                What's Included in Your <span className="text-[#4CAF50]">$697</span> SEO Package?
+              <h2 className="mb-6 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
+                What's Included in Your <span className="text-[#4CAF50]">$897</span> SEO Package?
               </h2>
               <p className="text-lg text-[#1D3557]">
                 Everything you need to dominate local search and attract more patients
@@ -232,8 +232,8 @@ export default function SEOPackagePage() {
         <section className="bg-[#1D3557] py-16 text-white">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase md:text-4xl">
-                Others Charge $3,000 – We Deliver the Same Results for <span className="text-[#4CAF50]">$697</span> !
+              <h2 className="mb-4 text-4xl md:text-5xl font-extrabold text-white leading-tight uppercase text-center">
+                Others Charge + $3,000 – We Deliver the Same Results for <span className="text-[#4CAF50]">$897</span> !
               </h2>
               <p className="text-lg">See how our affordable SEO package compares to overpriced competitors</p>
             </div>
@@ -241,7 +241,7 @@ export default function SEOPackagePage() {
             <div className="mx-auto max-w-4xl overflow-hidden rounded-lg bg-white">
               <div className="grid grid-cols-3 border-b p-4">
                 <div className="col-span-1 font-bold text-[#1D3557]">Feature</div>
-                <div className="col-span-1 font-bold text-[#1D3557] text-center">Our SEO ($697)</div>
+                <div className="col-span-1 font-bold text-[#1D3557] text-center">Our SEO ($897)</div>
                 <div className="col-span-1 font-bold text-[#1D3557] text-center">Typical SEO ($3,000+)</div>
               </div>
 
@@ -304,13 +304,13 @@ export default function SEOPackagePage() {
               {/* Bottom Row - Price */}
               <div className="grid grid-cols-3 bg-[#F5F5F5] p-4">
                 <div className="col-span-1 font-bold text-[#1D3557]">Monthly Investment</div>
-                <div className="col-span-1 text-center font-bold text-[#4CAF50]">$697<span className="block md:inline">/month</span></div>
+                <div className="col-span-1 text-center font-bold text-[#4CAF50]">$897<span className="block md:inline">/month</span></div>
                 <div className="col-span-1 text-center font-bold text-red-500">$3,000+<span className="block md:inline">/month</span></div>
               </div>
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
                 Get Found Online – Start Today!
               </Button>
             </div>
@@ -321,7 +321,7 @@ export default function SEOPackagePage() {
         <section className="bg-white py-16">
           <div className="container">
             <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+              <h2 className="mb-4 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">
                 Real Results for Dental Practices
               </h2>
               <p className="text-lg text-[#1D3557]">
@@ -446,32 +446,34 @@ export default function SEOPackagePage() {
         </section>
 
         {/* 6️⃣ The Final Call */}
-        <section className="bg-[#F5F5F5] py-16">
+    
+         <section className="bg-[#1D3557] py-16 text-white">
           <div className="container">
-            <div className="mx-auto max-w-3xl rounded-xl bg-white p-8 shadow-xl">
+            <div className="mx-auto rounded-lg border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
               <div className="text-center">
-                <h2 className="mb-6 text-3xl font-bold uppercase text-[#1D3557] md:text-4xl">
+                <h2 className="mb-6 text-3xl font-extrabold uppercase md:text-4xl">
                   Start Ranking Higher in 30 Days – Or Your Money Back!
                 </h2>
 
-                <div className="mb-8 inline-block rounded-full bg-[#4CAF50]/10 px-6 py-3">
+                <div className="mb-8 inline-block rounded-full bg-white/10 px-6 py-3">
                   <div className="flex items-center">
-                    <Shield className="mr-3 h-6 w-6 text-[#4CAF50]" />
+                    <Shield className="mr-3 h-6 w-6 text-[#4CAF50] hidden md:block" />
                     <span className="text-lg font-bold text-[#4CAF50]">90-Day Money-Back Guarantee</span>
                   </div>
                 </div>
 
-                <p className="mb-8 text-lg text-[#1D3557]">
-                  We guarantee real progress within 60 days—or we'll refund every dollar, no questions asked.
+                <p className="mb-8 text-lg">
+                 We guarantee real progress within 60 days—or we'll refund every dollar, no questions asked.
                 </p>
-
-                <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
+                <div className="flex justify-center">
+                  <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
                   <span>Try It Risk-Free</span>
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+               
                 </Button>
 
-                <p className="mt-4 text-sm text-gray-500">
-                  No contracts. Cancel anytime. Start seeing results in as little as 30 days.
+                </div>
+                <p className="mt-4 text-sm text-white/70">
+                   No contracts. Cancel anytime. Start seeing results in as little as 30 days.
                 </p>
               </div>
             </div>
@@ -484,15 +486,15 @@ export default function SEOPackagePage() {
       </main>
 
       {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 hidden bg-white py-4 shadow-lg md:block">
+      <div className="fixed bottom-0 left-0 right-0 z-40 hidden bg-[#1D3557] text-white py-4 shadow-lg md:block">
         <div className="container flex items-center justify-between">
           <div className="flex items-center">
-            <div className="mr-4 text-2xl font-bold text-[#1D3557]">
-              $697<span className="text-sm font-normal">/month</span>
+            <div className="mr-4 text-2xl font-bold text-[#4CAF50]">
+              $897<span className="text-sm font-normal">/month</span>
             </div>
-            <div className="text-[#1D3557]">No contracts. 90-day money-back guarantee.</div>
+            <p className="text-xl">No contracts. 90-day money-back guarantee.</p>
           </div>
-          <Button className="bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90">Get Started Today</Button>
+          <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">Get Started Today</Button>
         </div>
       </div>
 

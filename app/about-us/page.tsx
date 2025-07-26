@@ -65,10 +65,10 @@ export default function AboutUsPage() {
             </div>
 
             {/* Team Image */}
-            <div className="relative mx-auto max-w-md rounded-lg bg-white p-3 shadow-xl">
+            <div className="relative mx-auto h-[400px] w-full rounded-lg shadow-xl">
               <div className="overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=500&width=700"
+                  src="/images/web-dr.webp"
                   alt="MUCHODENTALMARKETING team"
                   width={700}
                   height={500}
@@ -76,16 +76,6 @@ export default function AboutUsPage() {
                 />
               </div>
 
-              {/* Play Button Overlay for Video Option */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="rounded-full bg-white/80 p-4 shadow-lg transition-transform hover:scale-110">
-                  <div className="h-12 w-12 rounded-full bg-[#F4A261] p-3 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -94,8 +84,8 @@ export default function AboutUsPage() {
         <section className="bg-[#F5F5F5] py-16">
           <div className="container">
             <div className="mx-auto max-w-3xl text-center">
-              <div className="mb-6 inline-block rounded-full bg-[#F4A261]/20 px-6 py-2">
-                <h2 className="text-xl font-bold text-[#F4A261]">
+              <div className="mb-6 inline-block rounded-full bg-[#4CAF50]/20 px-6 py-2">
+                <h2 className="text-xl font-bold text-[#4CAF50] uppercase">
                   Marketing for Dentists, Designed by Experts Who Care
                 </h2>
               </div>

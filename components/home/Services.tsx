@@ -1,6 +1,6 @@
 
 
-import { Search, Layers, MapPin, CheckCircle } from 'lucide-react'
+import { Search, Layers, MapPin, CheckCircle , Laptop } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
@@ -8,7 +8,7 @@ import Link from 'next/link'
 const services = [
   {
     title: "SEO",
-    price: "$697/month",
+    price: "$897/month",
     description: "Rank higher in search results and get more patients through organic traffic.",
     features: ["Keyword optimization", "Local SEO", "Google Business Profile", "Monthly reporting"],
     icon: <Search className="h-10 w-10 text-[#1D3557]" />,
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Marketing System",
-    price: "$3,497/month",
+    price: "$2,497/month",
     description: "Complete marketing solution with SEO, ads, and automation for aggressive growth.",
     features: [
       "Everything in SEO package",
@@ -33,10 +33,10 @@ const services = [
   },
   {
     title: "Web Design",
-    price: "$1,247-$4,497",
+    price: "$3,497",
     description: "Modern, high-converting websites designed specifically for dental practices.",
     features: ["Mobile responsive", "SEO-friendly", "Patient scheduling", "One-time payment"],
-    icon: <MapPin className="h-10 w-10 text-[#1D3557]" />,
+    icon: <Laptop className="h-10 w-10 text-[#4CAF50]" />,
     link: "/services/web-design",
   },
 ]
@@ -46,8 +46,8 @@ export default function ServiceOverview() {
     <section id="services" className="relative bg-white py-16 overflow-hidden">
       <div className="container">
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <h2 className="mb-4 text-3xl font-bold text-[#1D3557] md:text-4xl">What We Offer</h2>
-          <p className="text-lg text-[#1D3557]">
+          <h2 className="mb-4 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">What We Offer</h2>
+          <p className="mt-4 text-xl text-[#1D3557]">
             We handle everything so you can focus on your patients. Choose the right package for your needs.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function ServiceOverview() {
                 {service.features.map((feature, j) => (
                   <li key={j} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 text-[#F4A261]" />
-                    <span>{feature}</span>
+                    <span className='text-[#1D3557]'>{feature}</span>
                   </li>
                 ))}
               </ul>
