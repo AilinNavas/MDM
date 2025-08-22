@@ -21,9 +21,9 @@ const Footer = () => {
 
         <div className="flex gap-4 mb-4">
           {[
-            { href: 'https://facebook.com', icon: <Facebook />, label: 'Facebook' },
-            { href: 'https://instagram.com', icon: <Instagram />, label: 'Instagram' },
-            { href: 'mailto:info@yourbusiness.com', icon: <Mail />, label: 'Email' },
+            { href: 'https://web.facebook.com/people/Mucho-Dental-Marketing/61560170496548/', icon: <Facebook />, label: 'Facebook' },
+            { href: 'https://www.instagram.com/mucho_dental_marketing/', icon: <Instagram />, label: 'Instagram' },
+            { href: 'mailto:joel@mucho-dental-marketing.com', icon: <Mail />, label: 'Email' },
           ].map(({ href, icon, label }) => (
             <Link
               key={label}
