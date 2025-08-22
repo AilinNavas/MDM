@@ -60,9 +60,9 @@ export default function SEOPackagePage() {
               </div>
 
               <div className="pt-4">
-                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
-                  <span>Boost My Rankings Today</span>
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+                  <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>Boost My Rankings Today</span>
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></a>
                 </Button>
               </div>
             </div>
@@ -153,9 +153,9 @@ export default function SEOPackagePage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-[#1D3557] hover:bg-[#1D3557]/90">
-                <span>See How We Fix This</span>
-                <ChevronRight className="ml-2 h-5 w-5" />
+              <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
+                <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>See How We Fix This</span>
+                <ChevronRight className="ml-2 h-5 w-5" /></a>
               </Button>
             </div>
           </div>
@@ -218,14 +218,7 @@ export default function SEOPackagePage() {
             </div>
           </div>
 
-          {/* Sticky CTA */}
-          <div className="sticky bottom-0 left-0 right-0 bg-white py-4 shadow-md md:hidden">
-            <div className="container">
-              <Button className="w-full bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90">
-                Let's Grow Your Practice
-              </Button>
-            </div>
-          </div>
+      
         </section>
 
         {/* 4️⃣ Competitive Advantage */}
@@ -310,8 +303,8 @@ export default function SEOPackagePage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
-                Get Found Online – Start Today!
+              <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+               <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"> Get Found Online – Start Today!</a>
               </Button>
             </div>
           </div>
@@ -438,8 +431,8 @@ export default function SEOPackagePage() {
 
 
             <div className="mt-10 text-center">
-              <Button className="bg-[#1D3557] hover:bg-[#1D3557]/90" size="lg">
-                I Want These Results
+              <Button asChild className=" bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+               <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"> I Want These Results</a>
               </Button>
             </div>
           </div>
@@ -466,8 +459,8 @@ export default function SEOPackagePage() {
                  We guarantee real progress within 60 days—or we'll refund every dollar, no questions asked.
                 </p>
                 <div className="flex justify-center">
-                  <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
-                  <span>Try It Risk-Free</span>
+                  <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+                  <a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>Try It Risk-Free</span></a>
                
                 </Button>
 
@@ -485,18 +478,7 @@ export default function SEOPackagePage() {
         <FaqSection faqs={seoPackageFaqs} />
       </main>
 
-      {/* Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 hidden bg-[#1D3557] text-white py-4 shadow-lg md:block">
-        <div className="container flex items-center justify-between">
-          <div className="flex items-center">
-            <div className="mr-4 text-2xl font-bold text-[#4CAF50]">
-              $897<span className="text-sm font-normal">/month</span>
-            </div>
-            <p className="text-xl">No contracts. 90-day money-back guarantee.</p>
-          </div>
-          <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">Get Started Today</Button>
-        </div>
-      </div>
+ 
 
 
     </div>

@@ -1,30 +1,14 @@
 'use client'
 import Image from "next/image"
-import Link from "next/link"
 import {
   ArrowRight,
   Star,
-  ChevronRight,
-  BarChart,
   Clock,
   Shield,
-  DollarSign,
-  Search,
   Check,
   X,
-  Globe,
-  Smartphone,
-  CheckCircle,
-  Laptop,
-  Code,
   Rocket,
-  Eye,
   Zap,
-  MapPin,
-  MessageCircle,
-  ClipboardList,
-  UserRound
-
 } from "lucide-react"
 import { motion } from "framer-motion"
 import { webDesignFaqs } from "@/app/data/faqs"
@@ -236,13 +220,14 @@ export default function WebDesignPage() {
                     className="my-2"
                   >
                     <Button
+                    asChild
                       size="lg"
                       className=" bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide"
-                    > <Check className="hidden md:block mr-3 h-6 w-6" />
-                      <span className="hidden md:block">Book Your Free Preview — No Pressure. No Payment. Just Proof.</span>
-                      <span className="md:hidden">Book Your Preview</span>
+                    ><a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><Check className="hidden md:block mr-3 h-6 w-6" />
+                      <span className="hidden md:block">Book Your Free Preview </span>
+                    
 
-                      <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
+                      <ArrowRight className="ml-2 h-5 w-5 hidden md:block" /></a>
                     </Button>
                   </motion.div>
 
@@ -349,11 +334,12 @@ export default function WebDesignPage() {
                   transition={{ type: 'spring', stiffness: 250 }}
                 >
                   <Button
+                  asChild
                     size="lg"
                     className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide"
-                  >
+                  ><a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">
                     GET STARTED TODAY
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-5 w-5" /></a>
                   </Button>
                 </motion.div>
 
@@ -480,11 +466,12 @@ export default function WebDesignPage() {
                 transition={{ type: 'spring', stiffness: 250 }}
               >
                 <Button
+                asChild
                   size="lg"
                   className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide"
-                >
+                ><a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">
                   LET'S BUILD YOUR WEBSITE
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5" /></a>
                 </Button>
               </motion.div>
             </div>
@@ -504,9 +491,9 @@ export default function WebDesignPage() {
       {/* Sticky CTA Bar for Mobile */}
       <div className="fixed bottom-0 left-0 right-0 z-40 bg-white py-4 shadow-lg md:hidden border-2 border-red-600">
         <div className="container mx-auto flex items-center justify-between px-4">
-          <Button className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
-            <Rocket className="mr-2 h-5 w-5" />
-            <span className="uppercase text-lg">Build My Website</span>
+          <Button asChild className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
+            <a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><Rocket className="mr-2 h-5 w-5" />
+            <span className="uppercase text-lg">Build My Website</span></a>
           </Button>
         </div>
       </div>

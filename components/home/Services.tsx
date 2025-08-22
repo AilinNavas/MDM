@@ -46,7 +46,7 @@ export default function ServiceOverview() {
     <section id="services" className="relative bg-white py-16 overflow-hidden">
       <div className="container">
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <h2 className="mb-4 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">What We Offer</h2>
+          <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">What We Offer</h2>
           <p className="mt-4 text-xl text-[#1D3557]">
             We handle everything so you can focus on your patients. Choose the right package for your needs.
           </p>

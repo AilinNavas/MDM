@@ -66,9 +66,9 @@ export default function MarketingSystemPage() {
               </div>
 
               <div className="pt-4">
-                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
-                  <span>Start Growing Today</span>
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+                 <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>Start Growing Today</span>
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></a>
                 </Button>
               </div>
             </div>
@@ -161,9 +161,9 @@ export default function MarketingSystemPage() {
                 <span className="font-bold">What We Do:</span> We don't just bring traffic – we convert it into
                 appointments.
               </p>
-              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
-                <span>Let's Build Your Growth Plan</span>
-                <ChevronRight className="ml-2 h-5 w-5" />
+              <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
+                <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>Let's Build Your Growth Plan</span>
+                <ChevronRight className="ml-2 h-5 w-5" /></a>
               </Button>
             </div>
           </div>
@@ -233,9 +233,9 @@ export default function MarketingSystemPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
-                <span>See How It Works</span>
-                <ChevronRight className="ml-2 h-5 w-5" />
+              <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide">
+                <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"><span>See How It Works</span>
+                <ChevronRight className="ml-2 h-5 w-5" /></a>
               </Button>
             </div>
           </div>
@@ -370,8 +370,8 @@ export default function MarketingSystemPage() {
             </div>
 
             <div className="mt-10 text-center">
-              <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
-                Let's Start Growing
+              <Button asChild className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide" size="lg">
+                <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">Let's Start Growing</a>
               </Button>
             </div>
           </div>
@@ -644,39 +644,7 @@ export default function MarketingSystemPage() {
 
         <FaqSection faqs={marketingSystemFaqs} />
 
-        {/* 🔟 Final CTA Section */}
-        <section className="bg-[#1D3557] py-16 text-white">
-          <div className="container">
-            <div className="mx-auto max-w-3xl rounded-xl bg-[#F4A261]/10 p-8 backdrop-blur-sm">
-              <div className="text-center">
-                <h2 className="mb-6 text-3xl font-bold uppercase md:text-4xl">
-                  Ready to Fill Your Schedule with High-Value Patients?
-                </h2>
-
-                <div className="mb-8 inline-block rounded-full bg-white/10 px-6 py-3">
-                  <div className="flex items-center">
-                    <Shield className="mr-3 h-6 w-6 text-[#F4A261]" />
-                    <span className="text-lg font-bold text-[#F4A261]">90-Day Money-Back Guarantee</span>
-                  </div>
-                </div>
-
-                <p className="mb-8 text-lg">
-                  Join hundreds of successful dental practices using our Marketing System to grow predictably and
-                  profitably.
-                </p>
-
-                <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
-                  <span>Get More Patients Now</span>
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Button>
-
-                <p className="mt-4 text-sm text-white/70">
-                  No contracts. Cancel anytime. Start seeing results in as little as 30 days.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      
       </main>
 
       {/* Sticky CTA Bar for Mobile */}

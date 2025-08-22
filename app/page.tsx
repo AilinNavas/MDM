@@ -37,12 +37,12 @@ export default function Home() {
                 long-term contracts.
               </p>
               <div className="flex flex-col gap-4 sm:flex-row">
-                <Button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase" size="lg">
-                  Get Started Today
+                <Button
+                asChild
+                className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase" size="lg">
+                 <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"> Get Started Today</a>
                 </Button>
-                <Button variant="outline" className="border-[#1D3557] text-[#1D3557] hover:bg-transparent hover:text-white hover:border-white transition-all duration-300 uppercase " size="lg">
-                  Free Consultation
-                </Button>
+               
               </div>
             </div>
             <div className="relative h-[400px] w-full overflow-hidden rounded-lg shadow-lg">
@@ -165,10 +165,8 @@ export default function Home() {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] leading-tight uppercase">
-                Why Choose{' '}
-                <span className="text-[#4CAF50]">
-                  Us?
-                </span>
+                Why Choose Us?
+
               </h2>
               <p className="text-xl text-[#1D3557]/80 max-w-3xl mx-auto leading-relaxed">
                 We deliver exceptional value with transparency, flexibility, and guaranteed results.
@@ -210,7 +208,7 @@ export default function Home() {
 
                     {/* Icon Container */}
                     <div className="relative mb-6">
-                      <div className={`w-20 h-20 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-all duration-300 group-hover:shadow-2xl`}>
+                      <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:scale-110 transition-all duration-300 `}>
                         <div className="text-white">
                           {item.icon}
                         </div>
@@ -245,7 +243,7 @@ export default function Home() {
         {/* 4️⃣ Success Stories & Social Proof - Redesigned with One Impactful Review */}
         <section id="testimonials" className="bg-[#F5F5F5] py-16">
           <div className="container">
-            <h2 className="mb-12 text-4xl md:text-5xl font-extrabold text-[#1D3557] leading-tight uppercase text-center">Success Story</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] text-center leading-tight uppercase mb-6">Success Story</h2>
 
             <div className="mx-auto max-w-4xl overflow-hidden rounded-xl bg-white shadow-lg">
               <div className="grid md:grid-cols-5">
@@ -256,13 +254,13 @@ export default function Home() {
                     src="/images/top1.webp"
                     alt="Dr. Sarah Johnson"
                     width={600}
-                    height={800}
+                    height={700}
                     className="h-full w-full object-cover"
                   />
                 </div>
 
                 {/* Content Column */}
-                <div className="p-8 md:col-span-3">
+                <div className="p-8 md:col-span-3 flex flex-col justify-center">
                   <div className="flex mb-4">
                     {[1, 2, 3, 4, 5].map((_, i) => (
                       <Star key={i} className="h-6 w-6 fill-[#F4A261] text-[#F4A261]" />
@@ -297,15 +295,7 @@ export default function Home() {
 
                   </blockquote>
 
-                  <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                    <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90">
-                      <span>Read Full Case Study</span>
-                      <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </Button>
-                    <Button variant="outline" className="border-[#1D3557] text-[#1D3557]">
-                      View More Success Stories
-                    </Button>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -318,7 +308,7 @@ export default function Home() {
 
 
         {/* Process Section - Minimalist Timeline */}
-        <section id="process" className="relative bg-gradient-to-b from-white to-[#F5F5F5] py-20 overflow-hidden">
+        <section id="process" className="relative bg-[#F5F5F5] py-20 overflow-hidden">
           {/* Subtle Background Elements */}
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-[#4CAF50] rounded-full blur-3xl"></div>
@@ -329,10 +319,7 @@ export default function Home() {
             {/* Header */}
             <div className="text-center mb-20">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1D3557] leading-tight uppercase mb-6">
-                Our Simple{' '}
-                <span className="text-[#4CAF50] ">
-                  Process
-                </span>
+                Our Simple Process
               </h2>
               <p className="text-xl text-[#1D3557]/80 max-w-2xl mx-auto leading-relaxed">
                 We make growing your dental practice straightforward and transparent
@@ -344,10 +331,10 @@ export default function Home() {
               {/* Central Timeline Line */}
               <div className="relative">
                 {/* Vertical Line for Mobile */}
-                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4CAF50] via-[#F4A261] to-[#4CAF50] md:hidden"></div>
+                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#4CAF50] via-[#F4A261]  md:hidden"></div>
 
                 {/* Horizontal Line for Desktop */}
-                <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-[#4CAF50] via-[#F4A261] to-[#F4A261] transform -translate-y-1/2"></div>
+                <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-[#4CAF50] via-[#F4A261] to-[#4CAF50] transform -translate-y-1/2"></div>
 
                 {/* Process Steps */}
                 <div className="space-y-16 md:space-y-0 md:grid md:grid-cols-4 md:gap-8">
@@ -363,7 +350,7 @@ export default function Home() {
                       step: "02",
                       title: "Custom Strategy",
                       description: "We create a tailored plan for your specific needs",
-                      color: "from-[#F4A261] to-[#e67e22]",
+                      color: "from-[#4CAF50] to-[#2e7d32]",
                       position: "bottom"
                     },
                     {
@@ -377,7 +364,7 @@ export default function Home() {
                       step: "04",
                       title: "Growth & Scaling",
                       description: "We optimize and scale based on performance data",
-                      color: "from-[#F4A261] to-[#e67e22]",
+                      color: "from-[#4CAF50] to-[#2e7d32]",
                       position: "bottom"
                     }
                   ].map((process, i) => (
@@ -424,42 +411,18 @@ export default function Home() {
 
             {/* Bottom CTA */}
             <div className="mt-20 text-center">
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50 max-w-2xl mx-auto">
-                <h3 className="text-2xl font-bold text-[#1D3557] mb-4">Ready to Get Started?</h3>
-                <p className="text-[#1D3557]/80 mb-6">Let's discuss how we can help grow your dental practice</p>
 
-                <button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  Schedule Your Discovery Call
-                </button>
 
-                <p className="text-xs text-[#1D3557]/60 mt-4">
-                  Free consultation • No commitment required
-                </p>
-              </div>
+              <button className="bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">Schedule Your Free Consultation</a>
+              </button>
+
+
             </div>
-          
+
           </div>
         </section>
 
-        {/* 6️⃣ Call-to-Action */}
-        <section className="relative overflow-hidden bg-[#1D3557] py-16 text-white">
-
-          <div className="container text-center">
-            <h2 className="mb-4 text-3xl font-extrabold md:text-4xl uppercase">Ready to grow your practice?</h2>
-            <p className="mx-auto mb-8 max-w-2xl text-lg">
-              Join hundreds of dental practices that are thriving with our marketing solutions.
-            </p>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button className="group bg-[#F4A261] text-[#1D3557] hover:bg-[#F4A261]/90" size="lg">
-                <span>Start Now</span>
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 text-[#1D3557]" />
-              </Button>
-              <Button variant="outline" className="border-white text-[#1D3557] hover:bg-white/10 hover:text-white" size="lg">
-                Book a Free Consultation
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* 7️⃣ FAQ Section with Modern Animation */}
 

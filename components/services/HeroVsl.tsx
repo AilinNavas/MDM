@@ -56,11 +56,12 @@ const HeroVsl = () => {
                 <div className="pt-4">
                   <motion.div whileHover={{ scale: 1.05 }} transition={{ type: 'spring', stiffness: 250 }}>
                     <Button
+                    asChild
                       size="lg"
                       className="w-full bg-gradient-to-r from-[#4CAF50] to-[#2e7d32] text-white hover:from-[#45a049] hover:to-[#256029] transition-all shadow-lg rounded-md uppercase text-lg tracking-wide"
-                    >
+                    ><a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">
                       Book My Free Design Meeting
-                      <ArrowRight className="ml-2 h-5 w-5 hidden md:block" />
+                      <ArrowRight className="ml-2 h-5 w-5 hidden md:block" /></a>
                     </Button>
                   </motion.div>
                   <p className='text-center text-sm text-gray-500 pt-2 font-semibold'>We’ll build your homepage first — pay only if you're thrilled.<span className='text-[#4CAF50]'> $3,497</span></p>

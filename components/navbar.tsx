@@ -179,8 +179,8 @@ export default function Navbar() {
 
         {/* Desktop CTA & Mobile Menu Button */}
         <div className="flex items-center gap-4">
-          <Button className="hidden lg:block bg-[#4CAF50] hover:bg-[#2e7d32] text-white transition-all duration-200 shadow-lg rounded-lg uppercase font-semibold">
-            Contact Us
+          <Button asChild className="hidden lg:block bg-[#4CAF50] hover:bg-[#2e7d32] text-white transition-all duration-200 shadow-lg rounded-lg uppercase font-semibold">
+            <a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">Contact Us</a>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -247,10 +247,11 @@ export default function Navbar() {
             {/* Mobile CTA */}
             <div className="pt-4 border-t border-white/10">
               <Button
+              asChild
                 className="w-full bg-[#4CAF50] hover:bg-[#2e7d32] text-white transition-all duration-200 shadow-lg rounded-lg uppercase font-semibold py-3"
                 onClick={() => setIsOpen(false)}
-              >
-                Contact Us
+              ><a  href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">
+                Contact Us</a>
               </Button>
             </div>
           </div>

@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Button } from "@/components/ui/button";
 import { Check, Star, ArrowRight } from 'lucide-react';
 
 const pricingData = [
@@ -61,9 +60,9 @@ const PricingSection: FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight uppercase mb-6">
             Transparent{' '}
-            <span className="text-[#4CAF50]">
+           
               Pricing
-            </span>
+          
           </h2>
           <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
             No contracts. No hidden fees. Just results.
@@ -105,7 +104,7 @@ const PricingSection: FC = () => {
 
                   {/* CTA Button */}
                   <button className={`w-full bg-gradient-to-r ${item.color} text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105`}>
-                    Get Started
+                   <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank"> Get Started</a>
                   </button>
                 </div>
               </div>
@@ -146,7 +145,7 @@ const PricingSection: FC = () => {
                     {/* Service */}
                     <div className="col-span-3">
                       <div className="flex items-center gap-3">
-                        <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${item.color}`}></div>
+                  
                         <div>
                           <h4 className="text-xl font-bold text-white">{item.service}</h4>
                           {item.highlight && (
@@ -183,7 +182,7 @@ const PricingSection: FC = () => {
                     {/* CTA */}
                     <div className="col-span-2">
                       <button className={`w-full bg-gradient-to-r ${item.color} text-white font-semibold py-2.5 px-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group-hover:scale-105`}>
-                        Get Started
+                       <a href="https://calendar.app.google/Fgof8rYL83ijGYUi8" target="_blank">Get Started</a> 
                       </button>
                     </div>
                   </div>
@@ -193,24 +192,7 @@ const PricingSection: FC = () => {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/20 max-w-2xl mx-auto">
-
-
-            <h3 className="text-2xl font-bold text-white mb-4">Ready to Grow Your Practice?</h3>
-            <p className="text-white/80 mb-6">Choose the plan that fits your needs and start seeing results</p>
-
-            <button className="bg-[#4CAF50] hover:bg-[#2e7d32] text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2">
-              Schedule Free Consultation
-              <ArrowRight className="w-5 h-5" />
-            </button>
-
-            <p className="text-xs text-white/60 mt-4">
-              No commitment required • 90-day money-back guarantee
-            </p>
-          </div>
-        </div>
+   
 
 
       </div>
